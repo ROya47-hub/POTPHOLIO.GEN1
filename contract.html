@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Santanu Rana</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(168, 85, 247, 0.3);
+            box-shadow: 0 0 30px -10px rgba(168, 85, 247, 0.15);
+        }
+
+        .glass-input {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-input:focus {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(168, 85, 247, 0.6);
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);
+        }
+    </style>
+</head>
+
+<body class="bg-[#080808] text-white min-h-screen flex flex-col justify-between antialiased selection:bg-purple-500/30 selection:text-purple-300">
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#080808]/80 backdrop-blur-md border-b border-white/10">
+        <nav class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+            <a href="index.html" class="text-xl font-bold tracking-tight hover:opacity-80 transition">
+                Rana<span class="text-purple-500">.in</span>
+            </a>
+
+            <ul class="hidden md:flex items-center gap-8 text-sm text-gray-400 font-medium">
+                <li><a href="stack.html" class="hover:text-white transition">Stack</a></li>
+                <li><a href="index.html#projects" class="hover:text-white transition">Projects</a></li>
+                <li><a href="index.html#experience" class="hover:text-white transition">Experience</a></li>
+                <li><a href="contact.html" class="text-purple-400 font-semibold">Contact</a></li>
+            </ul>
+
+            <a href="home.html" class="px-4 py-2 rounded-lg border border-white/20 hover:bg-white hover:text-black transition text-sm font-medium flex items-center gap-2">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Home
+            </a>
+        </nav>
+    </header>
+
+    <!-- AMBIENT BACKGROUND GLOWS -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-600/15 rounded-full blur-[128px]"></div>
+        <div class="absolute top-1/2 -right-40 w-96 h-96 bg-cyan-600/15 rounded-full blur-[128px]"></div>
+        <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-blue-600/15 rounded-full blur-[128px]"></div>
+    </div>
+
+    <!-- MAIN CONTACT CONTENT -->
+    <main class="relative z-10 max-w-6xl mx-auto px-6 pt-32 pb-20 w-full flex-grow">
+        
+        <!-- HEADER -->
+        <div class="max-w-3xl mb-12">
+            <div class="inline-flex items-center gap-2 border border-purple-500/30 bg-purple-500/10 rounded-full px-4 py-1.5 text-xs font-semibold text-purple-300 uppercase tracking-widest mb-4">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-purple-400"></i> Get In Touch
+            </div>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
+                Let's connect & build <br class="hidden sm:inline" />
+                <span class="bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                    something great together.
+                </span>
+            </h1>
+            <p class="mt-4 text-gray-400 text-base md:text-lg leading-relaxed">
+                Whether you have a project idea, a collaboration opportunity, or just want to discuss C++, Web Development, or AI/ML — my inbox is always open!
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-8 items-start">
+
+            <!-- LEFT COLUMN: Contact Details & Info -->
+            <div class="lg:col-span-5 space-y-6">
+                
+                <!-- Quick Info Card -->
+                <div class="glass-card p-6 md:p-8 rounded-2xl transition duration-300">
+                    <h2 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                        <i data-lucide="user" class="w-5 h-5 text-purple-400"></i> About Santanu
+                    </h2>
+                    
+                    <div class="space-y-5 text-sm text-gray-300">
+                        <div class="flex items-start gap-3.5">
+                            <div class="p-2.5 rounded-xl bg-white/5 border border-white/10 text-purple-400 shrink-0">
+                                <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold">Education</p>
+                                <p class="font-medium text-white mt-0.5">ECE Student</p>
+                                <p class="text-gray-400 text-xs">RCC Institute of Information Technology (RCC IIT), Kolkata</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5">
+                            <div class="p-2.5 rounded-xl bg-white/5 border border-white/10 text-cyan-400 shrink-0">
+                                <i data-lucide="code" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold">Core Focus</p>
+                                <p class="font-medium text-white mt-0.5">Full Stack Web Dev & AI/ML</p>
+                                <p class="text-gray-400 text-xs">C++, JavaScript, React, Tailwind CSS, Python</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5">
+                            <div class="p-2.5 rounded-xl bg-white/5 border border-white/10 text-emerald-400 shrink-0">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 uppercase tracking-wider font-semibold">Location</p>
+                                <p class="font-medium text-white mt-0.5">Kolkata, West Bengal, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Direct Social & Email Links -->
+                <div class="glass-card p-6 md:p-8 rounded-2xl transition duration-300">
+                    <h3 class="text-sm uppercase font-semibold text-gray-400 tracking-wider mb-4">Direct Channels</h3>
+                    
+                    <div class="space-y-3">
+                        <a href="mailto:santanurana.official@gmail.com" class="flex items-center justify-between p-3.5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-purple-500/40 transition group">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="mail" class="w-5 h-5 text-purple-400"></i>
+                                <div>
+                                    <p class="text-xs text-gray-400">Email Me</p>
+                                    <p class="text-sm font-medium text-white group-hover:text-purple-300 transition">santanurana.official@gmail.com</p>
+                                </div>
+                            </div>
+                            <i data-lucide="external-link" class="w-4 h-4 text-gray-500 group-hover:text-white transition"></i>
+                        </a>
+
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3.5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-purple-500/40 transition group">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="github" class="w-5 h-5 text-gray-300"></i>
+                                <div>
+                                    <p class="text-xs text-gray-400">GitHub</p>
+                                    <p class="text-sm font-medium text-white group-hover:text-purple-300 transition">github.com/santanurana</p>
+                                </div>
+                            </div>
+                            <i data-lucide="external-link" class="w-4 h-4 text-gray-500 group-hover:text-white transition"></i>
+                        </a>
+
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3.5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-purple-500/40 transition group">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="linkedin" class="w-5 h-5 text-blue-400"></i>
+                                <div>
+                                    <p class="text-xs text-gray-400">LinkedIn</p>
+                                    <p class="text-sm font-medium text-white group-hover:text-purple-300 transition">linkedin.com/in/santanurana</p>
+                                </div>
+                            </div>
+                            <i data-lucide="external-link" class="w-4 h-4 text-gray-500 group-hover:text-white transition"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN: Interactive Form -->
+            <div class="lg:col-span-7">
+                <div class="glass-card p-6 md:p-10 rounded-2xl relative overflow-hidden transition duration-300">
+                    
+                    <!-- SUCCESS OVERLAY (Hidden initially) -->
+                    <div id="successOverlay" class="hidden absolute inset-0 bg-[#080808]/95 backdrop-blur-lg z-20 flex flex-col items-center justify-center p-8 text-center transition-all duration-500">
+                        <div class="w-16 h-16 bg-green-500/20 border border-green-500/50 rounded-full flex items-center justify-center text-green-400 mb-6 animate-bounce">
+                            <i data-lucide="check-circle-2" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Message Sent Successfully!</h3>
+                        <p class="text-gray-400 text-sm max-w-md leading-relaxed mb-8">
+                            Thank you for reaching out, <span id="senderName" class="text-white font-medium"></span>. I'll get back to you as soon as possible!
+                        </p>
+                        <button onclick="resetForm()" class="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium text-sm transition flex items-center gap-2">
+                            <i data-lucide="rotate-ccw" class="w-4 h-4"></i> Send Another Message
+                        </button>
+                    </div>
+
+                    <!-- FORM -->
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                            <h2 class="text-xl font-bold text-white flex items-center gap-2">
+                                <i data-lucide="send" class="w-5 h-5 text-purple-400"></i> Send a Message
+                            </h2>
+                            <span class="text-xs text-gray-500">* All fields required</span>
+                        </div>
+
+                        <!-- Name Input -->
+                        <div>
+                            <label for="name" class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-2">Your Name</label>
+                            <div class="relative">
+                                <i data-lucide="user" class="w-5 h-5 text-gray-500 absolute left-3.5 top-3.5 pointer-events-none"></i>
+                                <input type="text" id="name" required placeholder="e.g. Alex Smith" class="w-full pl-11 pr-4 py-3 rounded-xl glass-input text-white text-sm outline-none transition placeholder:text-gray-600">
+                            </div>
+                        </div>
+
+                        <!-- Email Input -->
+                        <div>
+                            <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-2">Email Address</label>
+                            <div class="relative">
+                                <i data-lucide="mail" class="w-5 h-5 text-gray-500 absolute left-3.5 top-3.5 pointer-events-none"></i>
+                                <input type="email" id="email" required placeholder="e.g. alex@example.com" class="w-full pl-11 pr-4 py-3 rounded-xl glass-input text-white text-sm outline-none transition placeholder:text-gray-600">
+                            </div>
+                        </div>
+
+                        <!-- Subject Input -->
+                        <div>
+                            <label for="subject" class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-2">Subject / Topic</label>
+                            <div class="relative">
+                                <i data-lucide="tag" class="w-5 h-5 text-gray-500 absolute left-3.5 top-3.5 pointer-events-none"></i>
+                                <select id="subject" required class="w-full pl-11 pr-10 py-3 rounded-xl glass-input text-white text-sm outline-none transition appearance-none cursor-pointer bg-[#121212]">
+                                    <option value="" disabled selected>Select a topic...</option>
+                                    <option value="Project Collaboration">Project Collaboration</option>
+                                    <option value="Web Development Opportunity">Web Development Opportunity</option>
+                                    <option value="AI / ML Inquiry">AI / ML Inquiry</option>
+                                    <option value="General Networking">General Networking</option>
+                                </select>
+                                <i data-lucide="chevron-down" class="w-4 h-4 text-gray-500 absolute right-3.5 top-4 pointer-events-none"></i>
+                            </div>
+                        </div>
+
+                        <!-- Message Input -->
+                        <div>
+                            <label for="message" class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-2">Your Message</label>
+                            <textarea id="message" rows="5" required placeholder="Write your message here..." class="w-full p-4 rounded-xl glass-input text-white text-sm outline-none transition placeholder:text-gray-600 resize-none"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" id="submitBtn" class="w-full py-4 rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white font-semibold text-sm transition duration-300 shadow-lg shadow-purple-900/30 flex items-center justify-center gap-2 group">
+                            <span id="btnText">Send Message</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition" id="btnIcon"></i>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/10 relative z-10">
+        <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between gap-4 text-gray-500 text-sm">
+            <p>© 2026 Santanu Rana — RCC IIT Kolkata</p>
+            <p>Built with HTML + Tailwind CSS</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Handle Submit logic with simulated response feedback
+        function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = document.getElementById('btnText');
+
+            // Button loading animation
+            btnText.innerText = "Sending...";
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75');
+
+            setTimeout(() => {
+                document.getElementById('senderName').innerText = name;
+                document.getElementById('successOverlay').classList.remove('hidden');
+                
+                // Re-initialize icons inside overlay
+                lucide.createIcons();
+            }, 1000);
+        }
+
+        // Reset Form logic
+        function resetForm() {
+            document.getElementById('contactForm').reset();
+            document.getElementById('successOverlay').classList.add('hidden');
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = document.getElementById('btnText');
+            
+            btnText.innerText = "Send Message";
+            submitBtn.disabled = false;
+            submitBtn.classList.remove('opacity-75');
+        }
+    </script>
+</body>
+</html>
