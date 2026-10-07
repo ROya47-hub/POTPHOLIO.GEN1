@@ -1,2 +1,7 @@
 node_modules/
-stack.html
+dist/
+.output/
+.env
+.env.local
+*.log
+
